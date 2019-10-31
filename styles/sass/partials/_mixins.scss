@@ -1,0 +1,12 @@
+// @mixin mq-tablet {
+
+//     @media(max-width: 1023px){
+//         @content; //placeholder for something to come
+//     }
+    
+// }
+
+@mixin fonts($font-size,) {
+    font-family: $header-font;
+    font-size: $font-size;
+}

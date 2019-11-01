@@ -163,7 +163,7 @@ header {
 //IMAGE ONLY SECTION
 
 .image-only {
-    height: 400px;
+    height: auto;
 
     img {
         width: 100%;
@@ -174,20 +174,27 @@ header {
 
 .text-image-only{
     background-color: $white;
-    padding: 75px 0;
+    padding: 100px 0;
 
     img {
         width: 300px;
-        // border-right: 25px solid $orange;
-        // border-bottom: 30px solid $orange;
+        position:relative;
+        z-index: 2;
+    }
+    
+    .image {
+        position:relative;
     }
 
-    img::after{
+    .image::after{
         content: '';
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         background-color: $orange;
         display: block;
+        position: absolute;
+        top:30px;
+        left:30px
     }
     
     .wrapper {
@@ -198,8 +205,13 @@ header {
     .image,
     .text {
         width: 50%;
-        // height: 80vh;
     }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     .title {
         font-size: 5.2rem;
@@ -213,6 +225,7 @@ header {
         padding: 20px;
         margin-top: 20px;
         text-transform: uppercase;
+        width: 180px;
     }
 }
 

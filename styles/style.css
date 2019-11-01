@@ -194,6 +194,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -204,6 +208,7 @@ h4 {
 
 p {
   margin: 0;
+  line-height: 2.8rem;
 }
 
 .logo {
@@ -224,7 +229,7 @@ p {
 
 .home-header img {
   position: absolute;
-  bottom: -200px;
+  bottom: -190px;
   right: 0;
   width: 46%;
 }
@@ -318,6 +323,65 @@ header nav ul li:first-child a {
   letter-spacing: 1.2px;
 }
 
-.text-only p {
-  line-height: 3rem;
+.text-only button {
+  background-color: #4C0341;
+  border: none;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 15px;
+}
+
+.text-and-image {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-and-image .image,
+.text-and-image .text {
+  width: 35%;
+}
+
+.extra-info {
+  background: #FAE5FF;
+  height: 84vh;
+  padding: 25px 0;
+}
+
+.extra-info .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 75vh;
+}
+
+.extra-info h3 {
+  font-size: 5.2rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.locations,
+.community,
+.blog,
+.get-in-touch {
+  width: calc(80% / 2);
+}
+
+.image-only {
+  height: 50vh;
+}
+
+.image-only img {
+  width: 100%;
 }

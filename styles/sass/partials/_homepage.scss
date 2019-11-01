@@ -8,7 +8,7 @@
 
     img {
         position:absolute;
-        bottom:-200px;
+        bottom:-190px;
         right:0;
         width:46%;
     }
@@ -91,7 +91,63 @@ header {
         letter-spacing: 1.2px;
     }
 
-    p {
-        line-height:3rem;
+    button {
+        background-color: $purple;
+        border:none;
+        color: $white;
+        padding: 5px;
+        margin: 15px;
+    }
+}
+
+//TEXT AND IMAGE SECTION
+
+.text-and-image {
+    margin: 50px 0;
+    display:flex;
+    justify-content: space-between;
+
+    .image,
+    .text {
+        width: 35%;
+    }
+}
+
+// EXTRA INFO SECTION
+
+.extra-info {
+    background: $mauve;
+    height: 84vh;
+    padding:25px 0;
+    
+    .wrapper {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-content:space-around;
+        height: 75vh;
+    }
+
+    h3{
+        font-size: 5.2rem;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+}
+
+.locations,
+.community,
+.blog,
+.get-in-touch {
+    width: calc(80% / 2);
+}
+
+//IMAGE ONLY SECTION
+
+.image-only {
+    height: 50vh;
+
+    img {
+        width: 100%;
     }
 }

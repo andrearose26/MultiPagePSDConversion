@@ -36,6 +36,10 @@ body {
     font-family: $body-font;
 }
 
+img {
+    width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +50,7 @@ h4 {
 
 p {
     margin:0;
+    line-height: 2.8rem;
 }
 
 .logo {

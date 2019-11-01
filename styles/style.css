@@ -203,6 +203,7 @@ h2,
 h3,
 h4 {
   font-family: "Pompiere", cursive;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -218,6 +219,7 @@ p {
   letter-spacing: 1.1px;
   width: 40px;
   padding-top: 45px;
+  text-transform: none;
 }
 
 .home-header {
@@ -264,6 +266,7 @@ p {
   font-size: 11rem;
   line-height: 6.4rem;
   width: 500px;
+  text-transform: none;
 }
 
 header nav {
@@ -328,8 +331,9 @@ header nav ul li:first-child a {
   background-color: #4C0341;
   border: none;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 10px;
   margin: 15px;
+  text-transform: uppercase;
 }
 
 .text-and-image {
@@ -345,6 +349,11 @@ header nav ul li:first-child a {
 .text-and-image .image,
 .text-and-image .text {
   width: 35%;
+}
+
+.text-and-image .title {
+  font-size: 4.2rem;
+  letter-spacing: 1.3px;
 }
 
 .extra-info {
@@ -369,7 +378,6 @@ header nav ul li:first-child a {
 .extra-info h3 {
   font-size: 5.2rem;
   letter-spacing: 1.6px;
-  text-transform: uppercase;
 }
 
 .extra-info i {
@@ -394,7 +402,7 @@ header nav ul li:first-child a {
 }
 
 .image-only {
-  height: 50vh;
+  height: 400px;
 }
 
 .image-only img {
@@ -402,27 +410,47 @@ header nav ul li:first-child a {
 }
 
 .text-image-only {
-  height: 80vh;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 75px 0;
 }
 
 .text-image-only img {
   width: 300px;
 }
 
+.text-image-only img::after {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-color: #FE6F19;
+  display: block;
+}
+
 .text-image-only .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .text-image-only .image,
 .text-image-only .text {
   width: 50%;
-  height: 80vh;
+}
+
+.text-image-only .title {
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+}
+
+.text-image-only button {
+  background-color: #882C07;
+  border: none;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .image-gallery {

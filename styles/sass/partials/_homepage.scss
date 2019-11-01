@@ -32,6 +32,7 @@
         font-size: 11rem;
         line-height:6.4rem;
         width: 500px;
+        text-transform: none;
     }
 
 }
@@ -97,8 +98,9 @@ header {
         background-color: $purple;
         border:none;
         color: $white;
-        padding: 5px;
+        padding: 10px;
         margin: 15px;
+        text-transform: uppercase;
     }
 }
 
@@ -112,6 +114,11 @@ header {
     .image,
     .text {
         width: 35%;
+    }
+
+    .title {
+        font-size: 4.2rem;
+        letter-spacing: 1.3px;
     }
 }
 
@@ -133,7 +140,6 @@ header {
     h3{
         font-size: 5.2rem;
         letter-spacing: 1.6px;
-        text-transform: uppercase;
     }
 
     i {
@@ -157,7 +163,7 @@ header {
 //IMAGE ONLY SECTION
 
 .image-only {
-    height: 50vh;
+    height: 400px;
 
     img {
         width: 100%;
@@ -167,22 +173,46 @@ header {
 //POPULAR THIS MONTH 
 
 .text-image-only{
-    height: 80vh;
-    background: $white;
+    background-color: $white;
+    padding: 75px 0;
 
     img {
         width: 300px;
+        // border-right: 25px solid $orange;
+        // border-bottom: 30px solid $orange;
+    }
+
+    img::after{
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: $orange;
+        display: block;
     }
     
     .wrapper {
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .image,
     .text {
         width: 50%;
-        height: 80vh;
+        // height: 80vh;
+    }
+
+    .title {
+        font-size: 5.2rem;
+        letter-spacing: 1.2px;
+    }
+
+    button {
+        background-color: $brownRed;
+        border:none;
+        color: $white;
+        padding: 20px;
+        margin-top: 20px;
+        text-transform: uppercase;
     }
 }
 
@@ -193,9 +223,7 @@ header {
     background: $mauve;
 
     .wrapper {
-
         display: flex;
-
     }
 
     img {

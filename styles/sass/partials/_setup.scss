@@ -45,6 +45,7 @@ h2,
 h3,
 h4 {
     font-family: $header-font;
+    text-transform: uppercase;
     margin:0;
 }
 
@@ -60,4 +61,5 @@ p {
     letter-spacing: 1.1px;
     width: 40px;
     padding-top: 45px;
+    text-transform: none;
 }

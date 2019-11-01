@@ -344,22 +344,23 @@ header nav ul li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .text-and-image .text {
-  width: 35%;
+  width: 40%;
 }
 
 .text-and-image .text-one {
-  margin-left: 75px;
-}
-
-.text-and-image .text-two {
   margin-right: 75px;
 }
 
+.text-and-image .text-two {
+  margin-left: 75px;
+}
+
 .text-and-image .image {
-  width: 35%;
+  width: 40%;
 }
 
 .text-and-image img {
@@ -525,7 +526,7 @@ footer {
 
 .blog-header {
   height: 60vh;
-  background-image: url(../../../assets/blog-header.jpg);
+  background-image: url(../assets/blog-header.jpg);
   background-attachment: fixed;
   background-size: contain;
   position: relative;
@@ -557,6 +558,26 @@ footer {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   background: #FAE5FF;
+  position: relative;
+}
+
+.blog .page-header {
+  font-size: 8.0rem;
+  line-height: 9.2rem;
+  color: #4C0341;
+  position: absolute;
+  top: -225px;
+}
+
+.blog .main-image {
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
+  position: absolute;
+  top: -125px;
+}
+
+.blog .main-image img {
+  display: block;
 }
 
 .blog .blog-article {
@@ -565,7 +586,7 @@ footer {
 }
 
 .blog .blog-article .blog-title {
-  margin-top: 25px;
+  margin-top: 50px;
   color: #4C0341;
   font-size: 3rem;
 }
@@ -577,12 +598,6 @@ footer {
 
 .blog .blog-article p {
   margin: 10px 0;
-}
-
-.blog .page-header {
-  font-size: 8.0rem;
-  line-height: 9.2rem;
-  color: #4C0341;
 }
 
 .blog .blog-post {
@@ -615,4 +630,18 @@ footer {
 
 .comments .comment .display-pic {
   padding: 0 30px;
+  width: 25%;
+}
+
+.comments .comment .text {
+  width: 75%;
+}
+
+aside {
+  margin-top: 65px;
+  padding-right: 65px;
+}
+
+.aside-text {
+  margin: 50px 70px;
 }

@@ -110,24 +110,25 @@ header {
 
 .text-and-image {
     padding: 50px 0;
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    position: relative;
 
     .text {
-        width: 35%;
+        width: 40%;
     }
 
     .text-one {
-        margin-left: 75px;
+        margin-right: 75px;
     }
     
     .text-two {
-        margin-right: 75px;
+        margin-left: 75px;
 
     }
 
     .image {
-        width: 35%;
+        width: 40%;
     }
 
     img {
@@ -136,10 +137,14 @@ header {
     
     .image-one {
         box-shadow: 30px 30px $orange;
+        // position: absolute;
+        // top: -50px;
     }
     
     .image-two {
         box-shadow: -30px 30px $orange;
+        // position: absolute;
+        // bottom: -50px;
     }
 
     .text:first-child {

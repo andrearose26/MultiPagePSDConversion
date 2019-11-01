@@ -2,8 +2,7 @@
 
 .home-header {
     height: 95vh;
-    background-image: url(../../../assets/header-image.jpg);
-    //THIS DOESN'T WORK 
+    background-image: url(../assets/header-image.jpg);
     background-attachment: fixed;
     background-size: cover;
     position:relative;
@@ -86,7 +85,6 @@ header {
 .text-only {
     background-color: $mauve;
     text-align: center;
-    // height:75vh;
     padding: 165px 0;
     display:flex;
     flex-direction: column;
@@ -116,11 +114,32 @@ header {
     justify-content: space-between;
 
     .text {
-        width: 45%;
+        width: 35%;
+    }
+
+    .text-one {
+        margin-left: 75px;
+    }
+    
+    .text-two {
+        margin-right: 75px;
+
     }
 
     .image {
         width: 35%;
+    }
+
+    img {
+        display: block;
+    }
+    
+    .image-one {
+        box-shadow: 30px 30px $orange;
+    }
+    
+    .image-two {
+        box-shadow: -30px 30px $orange;
     }
 
     .text:first-child {

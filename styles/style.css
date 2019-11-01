@@ -224,7 +224,7 @@ p {
 
 .home-header {
   height: 95vh;
-  background-image: url(../../../assets/header-image.jpg);
+  background-image: url(../assets/header-image.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -347,11 +347,33 @@ header nav ul li a {
 }
 
 .text-and-image .text {
-  width: 45%;
+  width: 35%;
+}
+
+.text-and-image .text-one {
+  margin-left: 75px;
+}
+
+.text-and-image .text-two {
+  margin-right: 75px;
 }
 
 .text-and-image .image {
   width: 35%;
+}
+
+.text-and-image img {
+  display: block;
+}
+
+.text-and-image .image-one {
+  -webkit-box-shadow: 30px 30px #FE6F19;
+          box-shadow: 30px 30px #FE6F19;
+}
+
+.text-and-image .image-two {
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
 }
 
 .text-and-image .text:first-child {

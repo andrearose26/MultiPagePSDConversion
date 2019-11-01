@@ -586,8 +586,6 @@ footer {
 .blog .main-image {
   -webkit-box-shadow: -30px 30px #FE6F19;
           box-shadow: -30px 30px #FE6F19;
-  position: absolute;
-  top: -125px;
 }
 
 .blog .main-image img {
@@ -654,8 +652,20 @@ footer {
 aside {
   margin-top: 65px;
   padding-right: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (180px)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 180px);
+  gap: 0px;
+}
+
+.aside-image,
+.aside-text {
+  background: #FFFFFF;
 }
 
 .aside-text {
-  margin: 50px 70px;
+  padding: 0 50px;
 }

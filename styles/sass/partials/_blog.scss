@@ -42,8 +42,8 @@
     
     .main-image{
         box-shadow: -30px 30px $orange;
-        position: absolute;
-        top: -125px;
+        // position: absolute;
+        // top: -125px;
 
         img {
             display: block;
@@ -109,10 +109,17 @@
 aside {
     margin-top: 65px;
     padding-right: 65px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 180px);
+    gap:0px;
 }
-
-//image is probably position: absolute;
+.aside-image,
+.aside-text {
+    background: $white;
+}
 
 .aside-text {
-    margin: 50px 70px;
+    padding:0 50px;
 }
+//image is probably position: absolute;

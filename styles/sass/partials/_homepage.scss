@@ -3,6 +3,7 @@
 .home-header {
     height: 95vh;
     background-image: url(../../../assets/header-image.jpg);
+    //THIS DOESN'T WORK 
     background-attachment: fixed;
     background-size: cover;
     position:relative;
@@ -25,7 +26,7 @@
         height:57vh;
         justify-content: space-between;
     }
-
+    
     h2 {
         color: $purple;
         font-family: $header-font;
@@ -35,6 +36,17 @@
         text-transform: none;
     }
 
+    nav {
+
+        li:first-child {
+            background: $purple;
+            
+            a {
+                color: $white;
+            }
+        }
+    }
+    
 }
 
 header {
@@ -64,14 +76,6 @@ header {
                 }
             }
 
-            li:first-child {
-                background: $purple;
-                
-                a {
-                    color: $white;
-                }
-                // padding:5px;
-            }
             
         }
     }
@@ -111,15 +115,24 @@ header {
     display:flex;
     justify-content: space-between;
 
-    .image,
     .text {
+        width: 45%;
+    }
+
+    .image {
         width: 35%;
+    }
+
+    .text:first-child {
+        text-align: right;
     }
 
     .title {
         font-size: 4.2rem;
         letter-spacing: 1.3px;
     }
+
+
 }
 
 // EXTRA INFO SECTION
@@ -153,7 +166,7 @@ header {
 
 .locations,
 .community,
-.blog,
+.blog-link,
 .get-in-touch {
     width: calc(80% / 2);
     display:flex;

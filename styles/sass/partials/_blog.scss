@@ -141,3 +141,25 @@ aside {
 .aside-two {
     grid-row-start: 3;
 }
+
+//FORM 
+
+.comment-form {
+    margin-bottom: 100px;
+
+    form {
+        background: $mauve;
+        box-shadow: none;
+
+    }
+
+    input#name,
+    input[type="email"],
+    textarea {
+        background: $mauve;
+    }
+
+    button[type="submit"] {
+        background: $purple;
+    }
+}

@@ -801,3 +801,23 @@ aside {
   -ms-grid-row: 3;
       grid-row-start: 3;
 }
+
+.comment-form {
+  margin-bottom: 100px;
+}
+
+.comment-form form {
+  background: #FAE5FF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.comment-form input#name,
+.comment-form input[type="email"],
+.comment-form textarea {
+  background: #FAE5FF;
+}
+
+.comment-form button[type="submit"] {
+  background: #4C0341;
+}

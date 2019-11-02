@@ -553,6 +553,7 @@ footer {
 
 main {
   background: #FAE5FF;
+  position: relative;
 }
 
 main .wrapper {
@@ -566,6 +567,7 @@ main .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 75px;
 }
 
 main form {
@@ -573,9 +575,76 @@ main form {
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 2fr 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
-  width: 650px;
+  -ms-grid-rows: 20px 150px 50px;
+      grid-template-rows: 20px 150px 50px;
+  row-gap: 35px;
+  padding: 50px;
+  -webkit-box-shadow: -40px 40px #FE6F19;
+          box-shadow: -40px 40px #FE6F19;
+}
+
+main input#name,
+main input[type="email"] {
+  border: 0;
+  border-bottom: 2px solid #FE6F19;
+  padding: 15px;
+}
+
+main input#name {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  margin-right: 15px;
+}
+
+main textarea {
+  grid-column: span 2;
+  border: 2px solid #FE6F19;
+  padding: 15px;
+}
+
+main button[type="submit"] {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-column: span 2;
+  width: 100%;
+  background: #882C07;
+  border: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+main .main-form {
+  width: 65%;
+}
+
+main .contact-info {
+  width: 35%;
+}
+
+main .contact-info h3 {
+  color: #4C0341;
+  font-size: 3rem;
+}
+
+.social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  padding: 5px;
+}
+
+.social-media ul li:first-child {
+  padding-left: 0;
+}
+
+.social-media ul a {
+  color: #4C0341;
 }
 
 .blog-header {

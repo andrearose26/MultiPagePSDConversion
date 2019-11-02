@@ -14,17 +14,89 @@
 main{
 
     background: $mauve;
+    position: relative;
+
     .wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding: 75px;
     }
 
     form {
         background: $white;
         display: grid;
         grid-auto-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
-        width: 650px;
+        grid-template-rows:20px 150px 50px;
+        row-gap: 35px;
+        padding: 50px;
+        box-shadow: -40px 40px $orange;
+    }
+
+    input#name,
+    input[type="email"] {
+        border: 0;
+        border-bottom: 2px solid $orange;
+        padding: 15px;
+    }
+
+    input#name {
+        grid-row-start: 1;
+        margin-right: 15px;
+    }
+
+    textarea {
+        grid-column: span 2;
+        border: 2px solid $orange;
+        padding: 15px;
+    }
+    
+    button[type="submit"]{
+        grid-row-start: 3;
+        grid-column: span 2;
+        width: 100%;
+        background: $brownRed;
+        border: 0;
+        color: $white;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+    
+    .main-form{
+        width: 65%;
+        // position: absolute;
+        // top: -150px;
+        // right: 0;
+    }
+
+    .contact-info {
+        width: 35%;
+
+        h3 {
+            color: $purple;
+            font-size: 3rem;
+        }
+    }
+
+}
+
+//SOCIAL MEDIA 
+
+.social-media ul {
+    display: flex;
+    list-style-type: none;
+    padding:0;
+
+
+    li {
+        padding: 5px;
+    }
+    
+    li:first-child {
+        padding-left: 0;
+    }
+    
+    a {
+        color: $purple;
     }
 }

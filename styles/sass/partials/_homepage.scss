@@ -34,28 +34,22 @@
         width: 500px;
         text-transform: none;
     }
-
-    nav {
-
-        li:first-child {
-            background: $purple;
-            
-            a {
-                color: $white;
-            }
-        }
-    }
     
 }
 
 header {
-
+    
     nav {
-
+        
         font-size: 2rem;
         font-family: $body-font;
         text-transform: uppercase;
         
+        .current {
+            background: $purple;
+            color: $white;
+        }
+
         ul {
             display:flex;
             margin:0;
@@ -105,58 +99,6 @@ header {
         text-transform: uppercase;
     }
 }
-
-//TEXT AND IMAGE SECTION
-
-// .text-and-image {
-//     padding: 50px 0;
-//     display: flex;
-//     justify-content: space-between;
-//     position: relative;
-
-//     .text {
-//         width: 40%;
-//     }
-
-//     .text-one {
-//         margin-right: 75px;
-//     }
-    
-//     .text-two {
-//         margin-left: 75px;
-
-//     }
-
-//     .image {
-//         width: 40%;
-//     }
-
-//     img {
-//         display: block;
-//     }
-    
-//     .image-one {
-//         box-shadow: 30px 30px $orange;
-//         // position: absolute;
-//         // top: -50px;
-//     }
-    
-//     .image-two {
-//         box-shadow: -30px 30px $orange;
-//         // position: absolute;
-//         // bottom: -50px;
-//     }
-
-//     .text:first-child {
-//         text-align: right;
-//     }
-
-//     .title {
-//         font-size: 4.2rem;
-//         letter-spacing: 1.3px;
-//     }
-
-// }
 
 //Text and Image Section (Grid testing)
 

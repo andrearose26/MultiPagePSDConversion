@@ -11,20 +11,15 @@
         display: flex;
         justify-content: space-between;
     }
-
-    nav {
-        li:nth-child(3) {
-        background: $purple;
-        
-            a {
-                color: $white;
-            }
-        }
-        
-    }
 }
 
 //GENERAL
+
+.page-header {
+    font-size: 8.0rem;
+    line-height: 9.2rem;
+    color: $purple;
+}
 
 .blog {
     display:flex;
@@ -32,18 +27,16 @@
     background: $mauve;
     position: relative;
     
-    .page-header {
-        font-size: 8.0rem;
-        line-height: 9.2rem;
-        color: $purple;
+    .page-header{
         position: absolute;
         top: -225px;
     }
     
+    
     .main-image{
         box-shadow: -30px 30px $orange;
-        // position: absolute;
-        // top: -125px;
+        position: absolute;
+        top: -125px;
 
         img {
             display: block;
@@ -63,6 +56,10 @@
         .blog-stats {
             margin-bottom: 25px;
             font-weight: bold;
+        }
+        
+        .blog-text {
+            padding-top: 425px;
         }
         
         p {
@@ -107,19 +104,40 @@
 // ASIDE
 
 aside {
+    height: 700px;
     margin-top: 65px;
     padding-right: 65px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 180px);
+    grid-template-rows: 200px 200px 200px;
     gap:0px;
+    position: relative;
 }
-.aside-image,
-.aside-text {
-    background: $white;
+
+.aside-title {
+    color: $purple;
 }
 
 .aside-text {
+    background: $white;
     padding:0 50px;
 }
-//image is probably position: absolute;
+
+.aside-image {
+    position: absolute;
+    top:-100px;
+
+    img {
+        display:block;
+        width: 350px;
+    }
+
+}
+
+.aside-one {
+    grid-row-start: 2;
+}
+
+.aside-two {
+    grid-row-start: 3;
+}

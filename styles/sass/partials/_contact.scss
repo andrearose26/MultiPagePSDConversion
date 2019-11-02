@@ -1,0 +1,30 @@
+.contact-header {
+    height: 50vh;
+    background-image: url(../assets/contact-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+main{
+
+    background: $mauve;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    form {
+        background: $white;
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        width: 650px;
+    }
+}

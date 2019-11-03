@@ -2,7 +2,7 @@
     height: 50vh;
     background-image: url(../assets/contact-image.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     
     .wrapper {
         display: flex;
@@ -17,7 +17,7 @@ main{
     position: relative;
 
     .wrapper {
-        display: flex;
+        display: grid;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 75px;
@@ -63,14 +63,14 @@ main{
     }
     
     .main-form{
-        width: 65%;
-        // position: absolute;
-        // top: -150px;
-        // right: 0;
+        width: 55%;
+        position: absolute;
+        top: -200px;
+        right: 75px;
     }
 
     .contact-info {
-        width: 35%;
+        width: 400px;
 
         h3 {
             color: $purple;

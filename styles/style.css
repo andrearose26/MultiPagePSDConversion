@@ -334,6 +334,7 @@ header nav ul li a {
 }
 
 .text-and-images {
+  background: #FFFFFF;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -539,7 +540,7 @@ footer {
   height: 50vh;
   background-image: url(../assets/contact-image.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 .contact-header .wrapper {
@@ -557,9 +558,8 @@ main {
 }
 
 main .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -615,11 +615,14 @@ main button[type="submit"] {
 }
 
 main .main-form {
-  width: 65%;
+  width: 55%;
+  position: absolute;
+  top: -200px;
+  right: 75px;
 }
 
 main .contact-info {
-  width: 35%;
+  width: 400px;
 }
 
 main .contact-info h3 {

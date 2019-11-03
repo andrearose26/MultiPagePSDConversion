@@ -1,24 +1,40 @@
-// @mixin mq-tablet {
+ /* Extra small devices (phones, 600px and down) */
+ @mixin mq-small-phones {
 
-//     @media(max-width: 1023px){
-//         @content; //placeholder for something to come
-//     }
-    
-// }
-
-@mixin fonts($font-size,) {
-    font-family: $header-font;
-    font-size: $font-size;
+     @media only screen and (max-width: 600px) {
+         @content;
+    }
 }
 
-//Use an after element on img div
-@mixin orange-border {
-        content: '';
-        width: 300px;
-        height: 300px;
-        background-color: $orange;
-        display: block;
-        position: absolute;
-        top:30px;
-        left:30px
-} // must add a position:relative and z-index to the img element that this is applied to
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin mq-large-phones {
+
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin mq-tablets {
+
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin mq-desktops{
+
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@mixin mq-large-desktops {
+
+    @media only screen and (min-width: 1200px) {
+        @content;
+    } 
+}

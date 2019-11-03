@@ -63,7 +63,7 @@ main{
     }
     
     .main-form{
-        width: 55%;
+        width: 50%;
         position: absolute;
         top: -200px;
         right: 75px;
@@ -99,4 +99,38 @@ main{
     a {
         color: $purple;
     }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @mixin mq-small-phones {
+
+     @media only screen and (max-width: 600px) {
+         @content;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin mq-large-phones {
+
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin mq-tablets {
+    form {
+        padding: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin mq-desktops{
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@mixin mq-large-desktops {
+
 }

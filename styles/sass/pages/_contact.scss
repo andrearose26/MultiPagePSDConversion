@@ -1,17 +1,9 @@
 .contact-header {
     height: 50vh;
     background-image: url(../assets/contact-image.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-    
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-    
 }
 
-main{
+.contact {
 
     background: $mauve;
     position: relative;
@@ -101,36 +93,3 @@ main{
     }
 }
 
- /* Extra small devices (phones, 600px and down) */
- @mixin mq-small-phones {
-
-     @media only screen and (max-width: 600px) {
-         @content;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@mixin mq-large-phones {
-
-    @media only screen and (min-width: 600px) {
-        @content;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@mixin mq-tablets {
-    form {
-        padding: 30px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@mixin mq-desktops{
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@mixin mq-large-desktops {
-
-}

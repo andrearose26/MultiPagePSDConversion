@@ -1,0 +1,38 @@
+//FROM HOMEPAGE
+
+.text-only button {
+    background-color: $purple;
+    border:none;
+    color: $white;
+    padding: 10px;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+//text and images
+
+.text-and-images .read-more {
+    width: 125px;
+    margin: 25px 0;
+    background: $brownRed;
+    border: none;
+    padding: 15px;
+    color: $white;
+    text-transform: uppercase;
+
+    .right-align {
+        align-self: flex-end;
+    }
+}
+
+//text and image only
+
+.text-image-only button{
+    background-color: $brownRed;
+    border:none;
+    color: $white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+//FROM CONTACT PAGE

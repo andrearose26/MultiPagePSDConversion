@@ -1,0 +1,45 @@
+.logo {
+    font-family: $header-font;
+    font-size: 3.58rem;
+    line-height: 3.6rem;
+    letter-spacing: 1.1px;
+    width: 40px;
+    padding-top: 45px;
+    text-transform: none;
+}
+
+//HOMEPAGE HEADER
+
+.home-header {
+    background-attachment: fixed;
+    background-size: cover;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//BLOG HEADER
+
+.blog-header {
+    background-attachment: fixed;
+    background-size: contain;
+
+    .wrapper {        
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//CONTACT HEADER
+
+.contact-header {
+    background-attachment: fixed;
+    background-size: contain;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

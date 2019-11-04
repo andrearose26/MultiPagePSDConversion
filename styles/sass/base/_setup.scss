@@ -7,18 +7,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 
-// VARIABLES
-
-$purple: #4C0341;
-$orange: #FE6F19;
-$white: #FFFFFF;
-$black: #0D0D0D;
-$brownRed: #882C07;
-$mauve: #FAE5FF;
-
-$body-font: 'Lato', sans-serif;
-$header-font: 'Pompiere', cursive;
-
 // GENERAL STYLES
 
 .wrapper {
@@ -38,28 +26,4 @@ body {
 
 img {
     width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: $header-font;
-    text-transform: uppercase;
-    margin:0;
-}
-
-p {
-    margin:0;
-    line-height: 2.8rem;
-}
-
-.logo {
-    font-family: $header-font;
-    font-size: 3.58rem;
-    line-height: 3.6rem;
-    letter-spacing: 1.1px;
-    width: 40px;
-    padding-top: 45px;
-    text-transform: none;
 }

@@ -1,8 +1,19 @@
-@import "partials/setup";
-@import "partials/mixins";
-@import "partials/homepage";
-@import "partials/contact";
-@import "partials/blog";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/setup";
+@import "base/typography";
+
+@import "components/buttons";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/forms";
+@import "layout/footer";
+
+@import "pages/homepage";
+@import "pages/contact";
+@import "pages/blog";
 
 // *{
 //     border: 1px red solid;

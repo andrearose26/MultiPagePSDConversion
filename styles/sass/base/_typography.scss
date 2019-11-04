@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: $header-font;
+    text-transform: uppercase;
+    margin:0;
+}
+
+p {
+    margin:0;
+    line-height: 2.8rem;
+}
+
+//FROM HOMEPAGE 
+
+.home-header h2 {
+    color: $purple;
+    font-family: $header-font;
+    font-size: 11rem;
+    line-height:6.4rem;
+    width: 500px;
+    text-transform: none;
+}
+
+header nav {
+    font-size: 2rem;
+    font-family: $body-font;
+    text-transform: uppercase;
+}
+
+//text only section
+
+.text-only h3 {
+    font-family: $header-font;
+    font-size: 5.2rem;
+    letter-spacing: 1.2px;
+}
+
+//text and images
+
+.text-and-images {
+
+    .title {
+        font-size: 4.2rem;
+        letter-spacing: 1.3px;
+        margin-bottom:20px;
+    }
+}
+
+//extra info
+
+.extra-info h3 {
+    font-size: 5.2rem;
+    letter-spacing: 1.6px;
+}
+
+//text and image only
+
+.text-image-only .title {
+    font-size: 5.2rem;
+    letter-spacing: 1.2px;
+}
+
+
+//FROM BLOG 
+
+.page-header {
+    font-size: 8.0rem;
+    line-height: 9.2rem;
+    color: $purple;
+}
+
+.blog-article {
+
+    .blog-title {
+        margin-top: 50px;
+        color: $purple;
+        font-size: 3rem;
+    }
+
+    .blog-stats {
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+}
+
+//aside
+
+.aside-title {
+    color: $purple;
+}

@@ -1,3 +1,8 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -212,60 +217,6 @@ p {
   line-height: 2.8rem;
 }
 
-.logo {
-  font-family: "Pompiere", cursive;
-  font-size: 3.58rem;
-  line-height: 3.6rem;
-  letter-spacing: 1.1px;
-  width: 40px;
-  padding-top: 45px;
-  text-transform: none;
-}
-
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-.home-header {
-  height: 95vh;
-  background-image: url(../assets/header-image.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-}
-
-.home-header img {
-  position: absolute;
-  bottom: -190px;
-  right: 0;
-  width: 46%;
-  z-index: 1;
-}
-
-.home-header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.home-header .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 57vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .home-header h2 {
   color: #4C0341;
   font-family: "Pompiere", cursive;
@@ -279,6 +230,133 @@ header nav {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
+}
+
+.text-only h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+}
+
+.text-and-images .title {
+  font-size: 4.2rem;
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+}
+
+.extra-info h3 {
+  font-size: 5.2rem;
+  letter-spacing: 1.6px;
+}
+
+.text-image-only .title {
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+}
+
+.page-header {
+  font-size: 8.0rem;
+  line-height: 9.2rem;
+  color: #4C0341;
+}
+
+.blog-article .blog-title {
+  margin-top: 50px;
+  color: #4C0341;
+  font-size: 3rem;
+}
+
+.blog-article .blog-stats {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.aside-title {
+  color: #4C0341;
+}
+
+.text-only button {
+  background-color: #4C0341;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 15px;
+  text-transform: uppercase;
+}
+
+.text-and-images .read-more {
+  width: 125px;
+  margin: 25px 0;
+  background: #882C07;
+  border: none;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.text-and-images .read-more .right-align {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.text-image-only button {
+  background-color: #882C07;
+  border: none;
+  color: #FFFFFF;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: "Pompiere", cursive;
+  font-size: 3.58rem;
+  line-height: 3.6rem;
+  letter-spacing: 1.1px;
+  width: 40px;
+  padding-top: 45px;
+  text-transform: none;
+}
+
+.home-header {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-header {
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.blog-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-header {
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.contact-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header nav .current {
@@ -308,6 +386,41 @@ header nav ul li a {
   text-decoration: none;
 }
 
+footer {
+  background: #882C07;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.home-header {
+  height: 95vh;
+  background-image: url(../assets/header-image.jpg);
+  position: relative;
+}
+
+.home-header img {
+  position: absolute;
+  bottom: -190px;
+  right: 0;
+  width: 46%;
+  z-index: 1;
+}
+
+.home-header .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 57vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .text-only {
   background-color: #FAE5FF;
   text-align: center;
@@ -324,21 +437,6 @@ header nav ul li a {
           justify-content: center;
 }
 
-.text-only h3 {
-  font-family: "Pompiere", cursive;
-  font-size: 5.2rem;
-  letter-spacing: 1.2px;
-}
-
-.text-only button {
-  background-color: #4C0341;
-  border: none;
-  color: #FFFFFF;
-  padding: 10px;
-  margin: 15px;
-  text-transform: uppercase;
-}
-
 .text-and-images {
   background: #FFFFFF;
   display: -ms-grid;
@@ -351,12 +449,6 @@ header nav ul li a {
           column-gap: 100px;
   row-gap: 200px;
   position: relative;
-}
-
-.text-and-images .title {
-  font-size: 4.2rem;
-  letter-spacing: 1.3px;
-  margin-bottom: 20px;
 }
 
 .text-and-images .text-one,
@@ -383,21 +475,6 @@ header nav ul li a {
 .text-and-images .text-two {
   text-align: right;
   margin-left: 65px;
-}
-
-.text-and-images .read-more {
-  width: 125px;
-  margin: 25px 0;
-  background: #882C07;
-  border: none;
-  padding: 15px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.text-and-images .read-more .right-align {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .text-and-images .image-one {
@@ -436,11 +513,6 @@ header nav ul li a {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   height: 75vh;
-}
-
-.extra-info h3 {
-  font-size: 5.2rem;
-  letter-spacing: 1.6px;
 }
 
 .extra-info i {
@@ -500,8 +572,6 @@ header nav ul li a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / span 2;
-  font-size: 5.2rem;
-  letter-spacing: 1.2px;
 }
 
 .text-image-only .wrapper p {
@@ -517,11 +587,6 @@ header nav ul li a {
   grid-row: 3;
   -ms-grid-column-align: start;
       justify-self: start;
-  background-color: #882C07;
-  border: none;
-  color: #FFFFFF;
-  padding: 20px;
-  text-transform: uppercase;
 }
 
 .image-gallery {
@@ -538,35 +603,17 @@ header nav ul li a {
   padding: 50px 25px;
 }
 
-footer {
-  background: #882C07;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 10px 0;
-}
-
 .contact-header {
   height: 50vh;
   background-image: url(../assets/contact-image.jpg);
-  background-attachment: fixed;
-  background-size: contain;
 }
 
-.contact-header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main {
+.contact {
   background: #FAE5FF;
   position: relative;
 }
 
-main .wrapper {
+.contact .wrapper {
   display: -ms-grid;
   display: grid;
   -webkit-box-orient: horizontal;
@@ -579,7 +626,7 @@ main .wrapper {
   padding: 75px;
 }
 
-main form {
+.contact form {
   background: #FFFFFF;
   display: -ms-grid;
   display: grid;
@@ -592,26 +639,26 @@ main form {
           box-shadow: -40px 40px #FE6F19;
 }
 
-main input#name,
-main input[type="email"] {
+.contact input#name,
+.contact input[type="email"] {
   border: 0;
   border-bottom: 2px solid #FE6F19;
   padding: 15px;
 }
 
-main input#name {
+.contact input#name {
   -ms-grid-row: 1;
       grid-row-start: 1;
   margin-right: 15px;
 }
 
-main textarea {
+.contact textarea {
   grid-column: span 2;
   border: 2px solid #FE6F19;
   padding: 15px;
 }
 
-main button[type="submit"] {
+.contact button[type="submit"] {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-column: span 2;
@@ -623,18 +670,18 @@ main button[type="submit"] {
   padding: 15px;
 }
 
-main .main-form {
+.contact .main-form {
   width: 50%;
   position: absolute;
   top: -200px;
   right: 75px;
 }
 
-main .contact-info {
+.contact .contact-info {
   width: 400px;
 }
 
-main .contact-info h3 {
+.contact .contact-info h3 {
   color: #4C0341;
   font-size: 3rem;
 }
@@ -659,31 +706,9 @@ main .contact-info h3 {
   color: #4C0341;
 }
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 .blog-header {
   height: 60vh;
   background-image: url(../assets/blog-header.jpg);
-  background-attachment: fixed;
-  background-size: contain;
-}
-
-.blog-header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.page-header {
-  font-size: 8.0rem;
-  line-height: 9.2rem;
-  color: #4C0341;
 }
 
 .blog {
@@ -717,17 +742,6 @@ main .contact-info h3 {
 .blog .blog-article {
   background: #FFFFFF;
   padding: 30px;
-}
-
-.blog .blog-article .blog-title {
-  margin-top: 50px;
-  color: #4C0341;
-  font-size: 3rem;
-}
-
-.blog .blog-article .blog-stats {
-  margin-bottom: 25px;
-  font-weight: bold;
 }
 
 .blog .blog-article .blog-text {

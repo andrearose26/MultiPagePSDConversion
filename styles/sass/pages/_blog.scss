@@ -4,23 +4,9 @@
 .blog-header {
     height: 60vh;
     background-image: url(../assets/blog-header.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-
-    
-    .wrapper {        
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 //GENERAL
-
-.page-header {
-    font-size: 8.0rem;
-    line-height: 9.2rem;
-    color: $purple;
-}
 
 .blog {
     display:flex;
@@ -47,17 +33,6 @@
     .blog-article {
         background: $white;
         padding:30px;
-
-        .blog-title {
-            margin-top: 50px;
-            color: $purple;
-            font-size: 3rem;
-        }
-
-        .blog-stats {
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
         
         .blog-text {
             padding-top: 425px;

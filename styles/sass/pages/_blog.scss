@@ -85,7 +85,7 @@ aside {
     padding-right: 65px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: repeat(2, 1fr);
     gap:0px;
     position: relative;
 }
@@ -95,8 +95,9 @@ aside {
 }
 
 .aside-text {
+    padding-top: 210px;
     background: $white;
-    padding:0 50px;
+    padding-left:0;
 }
 
 .aside-image {
@@ -110,14 +111,6 @@ aside {
 
 }
 
-.aside-one {
-    grid-row-start: 2;
-}
-
-.aside-two {
-    grid-row-start: 3;
-}
-
 //FORM 
 
 .comment-form {
@@ -126,7 +119,41 @@ aside {
     form {
         background: $mauve;
         box-shadow: none;
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        grid-template-rows:20px 150px 50px;
+        row-gap: 35px;
+        padding: 50px;
 
+    }
+
+    input#name,
+    input[type="email"] {
+        border: 0;
+        border-bottom: 2px solid $orange;
+        padding: 15px;
+    }
+
+    input#name {
+        grid-row-start: 1;
+        margin-right: 15px;
+    }
+
+    textarea {
+        grid-column: span 2;
+        border: 2px solid $orange;
+        padding: 15px;
+    }
+    
+    button[type="submit"]{
+        grid-row-start: 3;
+        grid-column: span 2;
+        width: 100%;
+        background: $brownRed;
+        border: 0;
+        color: $white;
+        text-transform: uppercase;
+        padding: 15px;
     }
 
     input#name,

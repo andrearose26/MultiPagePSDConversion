@@ -40,8 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 200px;
+    gap: 100px;
     position: relative;
 
     .text-one,
@@ -66,6 +65,7 @@
         box-shadow: 50px 50px $orange;
         position: absolute;
         top: -50px;
+        width: 45%;
     }
     
     .image-two {
@@ -73,6 +73,7 @@
         position: absolute;
         bottom: -50px;
         right: 0;
+        width: 45%;
     }
 
     img {
@@ -84,8 +85,7 @@
 
 .extra-info {
     background: $mauve;
-    height: 84vh;
-    padding:75px 0;
+    padding:150px 0 100px 0;
     
     .wrapper {
         display:flex;
@@ -129,6 +129,7 @@
 .text-image-only {
 
     background-color: $white;
+    padding: 50px 0 75px 0;
 
     .wrapper {
         display: grid;

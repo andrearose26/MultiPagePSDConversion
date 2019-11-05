@@ -169,10 +169,11 @@ aside {
 //MEDIA QUERIES
 
 @media (max-width: 1050px) {
+    
     .blog {
         .blog-article {
-            .blog-text {
-                padding-top: 325px;
+            .blog-title {
+                margin-top:0;
             }
         }
     }

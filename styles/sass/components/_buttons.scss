@@ -19,11 +19,12 @@
     padding: 15px;
     color: $white;
     text-transform: uppercase;
-
-    .right-align {
-        align-self: flex-end;
-    }
 }
+
+.read-more.right-align {
+    align-self: flex-end;
+}
+
 
 //text and image only
 

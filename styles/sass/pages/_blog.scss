@@ -35,7 +35,7 @@
         padding:30px;
         
         .blog-text {
-            padding-top: 425px;
+            padding-top: 390px;
         }
         
         p {
@@ -164,5 +164,17 @@ aside {
 
     button[type="submit"] {
         background: $purple;
+    }
+}
+//MEDIA QUERIES
+
+@media (max-width: 1050px) {
+    
+    .blog {
+        .blog-article {
+            .blog-title {
+                margin-top:0;
+            }
+        }
     }
 }

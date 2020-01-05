@@ -297,17 +297,11 @@
 }
 
 @media (max-width:620px) {
-    .text-image-only {
 
-        .wrapper {
-
-            .image {
-                width: 60%;
-            }
-    
-        }
-
+    .text-image-only .wrapper .image {
+        width: 60%;
     }
+    
 }
 
 

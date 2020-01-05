@@ -21,7 +21,7 @@ header {
                 padding:5px;
 
                 a {
-                    color:$black;
+                    color: $black;
                     text-decoration: none;
                     transition: border-bottom 0.3s ease, font-weight 0.3s ease;
                 }
@@ -36,12 +36,14 @@ header {
 }
 
 @media(max-width:1080px){
+
     header nav ul li a {
         color: $white;
     }
 }
 
 @media(min-width:760px) {
+
     input[type="checkbox"]{
         display:none;
     }
@@ -85,27 +87,30 @@ header {
         transform-origin: 4px 0px;
         
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
-         background: $orange;
+        background: $orange;
     }
 
     nav span:first-child {
         transform-origin: 0% 0%;
-         background: $orange;
+        background: $orange;
     }
 
     nav span:nth-last-child(2){
-         transform-origin: 0% 100%;
-         background: $orange;
+        transform-origin: 0% 100%;
+        background: $orange;
     }
+
     nav input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: $white;
     }
+
     nav input:checked ~ span:nth-last-child(3){
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
+    
     nav input:checked ~ span:nth-last-child(2){
         transform: rotate(-45deg) translate(0, -1px);
     }

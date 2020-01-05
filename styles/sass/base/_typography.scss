@@ -65,12 +65,13 @@ header nav {
     }
 }
 
-//extra info
+//Extra info
 
 .extra-info h3 {
     font-size: 5.2rem;
     letter-spacing: 1.6px;
 }
+
 @media(max-width: 950px) {
     .extra-info h3 {
         font-size: 4.5rem;
@@ -127,6 +128,7 @@ header nav {
 //CONTACT PAGE MEDIA QUERIES 
 
 @media (max-width: 1060px) {
+
     .page-header {
         text-align: center;
         padding-bottom: 40px;
@@ -134,10 +136,13 @@ header nav {
     .blog-article .blog-title {
         margin-top:0 
     }
+
 }
 
-@media(max-width:600px) {
+@media (max-width:600px) {
+
     .page-header {
         font-size: 6rem;
     }
+
 }
